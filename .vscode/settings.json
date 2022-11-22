@@ -1,0 +1,10 @@
+{
+    "leetcode.defaultLanguage": "python3",
+    "leetcode.workspaceFolder": "/Users/kristjanthor/Desktop/kris/code/personal/leetcode",
+    "leetcode.filePath": {
+        "default": {
+            "folder": "",
+            "filename": "${id}.${kebab-case-name}.${ext}"
+        }
+    }
+}
