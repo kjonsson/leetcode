@@ -33,7 +33,6 @@ class Solution:
             return result
         
         result = in_order(root)
-        print(result)
         
         return result 
             
