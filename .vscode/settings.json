@@ -8,8 +8,9 @@
         }
     },
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
+    "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": false,
-    "python.linting.mypyEnabled": false,
-    "python.pythonPath": "/Users/kris/.pyenv/versions/3.10.9/bin/python"
+    "python.linting.mypyEnabled": true,
+    "python.pythonPath": "/Users/kris/.pyenv/versions/3.10.9/bin/python",
+    "python.linting.pylamaEnabled": false
 }
