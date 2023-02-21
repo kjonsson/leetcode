@@ -14,23 +14,23 @@ class TreeNode:
 
 class Solution:
     def diameterOfBinaryTree(self, root: TreeNode | None) -> int:
-        answer = 0
+        longest_diameter = 0
 
-        def traverse(node: TreeNode | None) -> int:
-            nonlocal answer
+        def calculate_depth(node: TreeNode | None) -> int:
+            nonlocal longest_diameter
 
             if node is None:
                 return 0
 
-            left = traverse(node.left)
-            right = traverse(node.right)
+            left = calculate_depth(node.left)
+            right = calculate_depth(node.right)
 
-            answer = max(answer, left + right)
+            longest_diameter = max(longest_diameter, left + right)
 
             return max(left, right) + 1
         
-        traverse(root)
+        calculate_depth(root)
 
-        return answer
+        return longest_diameter
 # @lc code=end
 
