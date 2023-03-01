@@ -18,7 +18,10 @@ class Solution:
             if node1 is None and node2 is None:
                 return True
 
-            if node1 is None or node2 is None:
+            if node1 is None:
+                return False
+            
+            if node2 is None:
                 return False
 
             if node1.val != node2.val:
